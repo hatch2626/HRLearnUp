@@ -1,3 +1,4 @@
+/* Global Styles */
 * {
     margin: 0;
     padding: 0;
@@ -6,18 +7,29 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #ffefd5; /* Vibrant peach puff background */
     color: #333;
 }
 
+/* Container for the entire page */
 .container {
-    max-width: 800px;
+    max-width: 900px;
     margin: 50px auto;
     padding: 20px;
-    background-color: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #ffefd5;
+    border-radius: 10px;
+    text-align: center;
 }
 
+/* Empower Logo Centered */
+.empower-logo {
+    display: block;
+    margin: 0 auto 20px; /* Centered with space below */
+    max-width: 150px; /* Adjust size as needed */
+    max-height: 150px;
+}
+
+/* Main Title */
 h1 {
     font-size: 2.5rem;
     text-align: center;
@@ -38,18 +50,30 @@ p {
     font-size: 1.1rem;
 }
 
+/* Resource Grid with evenly distributed width and box shadow */
 .resource-grid {
     display: flex;
     justify-content: space-between;
+    gap: 20px; /* Space between resource boxes */
     margin-bottom: 30px;
 }
 
 .resource {
     flex: 1;
-    margin: 0 10px;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow for resources */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     text-align: center;
 }
 
+.resource:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Elevate box on hover */
+}
+
+/* Resource Titles */
 .resource a {
     display: block;
     font-size: 1.3rem;
@@ -63,6 +87,7 @@ p {
     color: #7f8c8d;
 }
 
+/* Logos centered in the resource boxes */
 .logo {
     max-width: 100px;
     max-height: 100px;
@@ -70,8 +95,7 @@ p {
     margin: 0 auto 10px;
 }
 
-
-
+/* Call to action styling */
 .cta {
     text-align: center;
     margin-top: 40px;
