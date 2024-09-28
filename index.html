@@ -17,18 +17,22 @@
     <div class="resource-grid">
         <div class="resource">
             <a href="https://www.aihr.com" target="_blank">AIHR</a>
+            <img src="https://www.aihr.com/wp-content/uploads/1.-AIHR-Primary-Logo-1.png" alt="AIHR Logo" class="logo">
             <p>Explore and obtain relevant HR certifications.</p>
         </div>
         <div class="resource">
             <a href="https://www.gartner.com" target="_blank">Gartner</a>
+            <img src="https://emt.gartnerweb.com/ngw/commonassets/images/build-graphics/gartner-logos/gartner.svg" alt="Gartner Logo" class="logo">
             <p>Gain HR insights and tools for leaders.</p>
         </div>
         <div class="resource">
             <a href="https://www.ihrp.sg" target="_blank">IHRP</a>
+            <img src="https://www.ihrp.sg/wp-content/uploads/2019/06/ihrp-logo.jpg" alt="IHRP Logo" class="logo">
             <p>Build your HR professional credentials.</p>
         </div>
         <div class="resource">
             <a href="https://www.idm.learn.gov.sg" target="_blank">LEARN</a>
+            <img src="Learn pic.png" alt="LEARN Logo" class="logo">
             <p>Deepen your competencies through the Civil Service College Learn app.</p>
         </div>
     </div>
@@ -39,41 +43,6 @@
     </div>
 </div>
 
-<!-- Page 2: Learning Plan Form -->
-<div class="container">
-    <h1>Create Your Learning Plan</h1>
-    <form id="learningPlanForm">
-        <label for="name">Full Name:</label>
-        <input type="text" id="name" name="name" placeholder="Enter your full name" required>
-
-        <label for="email">Email Address:</label>
-        <input type="email" id="email" name="email" placeholder="Enter your email address" required>
-
-        <label for="learningGoals">Learning Goals:</label>
-        <textarea id="learningGoals" name="learningGoals" rows="4" placeholder="Describe your learning objectives"></textarea>
-
-        <label for="preferredResources">Preferred Resources:</label>
-        <select id="preferredResources" name="preferredResources" multiple>
-            <option value="AIHR">AIHR</option>
-            <option value="Gartner">Gartner</option>
-            <option value="IHRP">IHRP</option>
-            <option value="LEARN">LEARN</option>
-        </select>
-
-        <label for="timeline">Learning Timeline:</label>
-        <input type="date" id="timeline" name="timeline" required>
-
-        <button type="submit" class="btn">Send Learning Plan</button>
-    </form>
-</div>
-
-<script>
-    document.getElementById("learningPlanForm").addEventListener("submit", function(event){
-        event.preventDefault();
-        alert("Your learning plan will be sent to your email.");
-        // Add functionality to send form data to email in PDF format
-    });
-</script>
 
 </body>
 </html>
